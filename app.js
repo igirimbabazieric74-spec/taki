@@ -1,5 +1,5 @@
 /* ============================================================
-   MVX — Application Logic
+   MVX â€” Application Logic
    Movies. Music. Endless Discovery.
    ============================================================ */
 
@@ -10,7 +10,7 @@
 /* ---------- TMDB (Movie Data) ----------
    Your TMDB key is already inserted below.
    Get a key at: https://www.themoviedb.org/settings/api
-   NOTE: This key only works for TMDB movie data — NOT for YouTube. */
+   NOTE: This key only works for TMDB movie data â€” NOT for YouTube. */
 const TMDB_API_KEY = "6fbf59759e4fb40d0bfd5bcd409b157d";
 const TMDB_BASE_URL = "https://api.themoviedb.org/3";
 const TMDB_IMG_URL  = "https://image.tmdb.org/t/p/";
@@ -25,7 +25,7 @@ const TMDB_IMG_URL  = "https://image.tmdb.org/t/p/";
         - API restrictions ? YouTube Data API v3 only
         - Application restrictions ? HTTP referrers (your domain + localhost)
    NOTE: A key placed here is visible to site visitors. Do not publish it in chats. */
-const YOUTUBE_API_KEY = "YOUR_YOUTUBE_API_KEY";
+const YOUTUBE_API_KEY = "AIzaSyD52PD_n9J5UQCzowHzHzK6saBmwb8BLS8";
 const YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search";
 
 /* ============================================================
@@ -33,28 +33,28 @@ const YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search";
    ============================================================ */
 const CURATED_COLLECTIONS = {
   featured: [
-    { id: "dQw4w9WgXcQ", title: "Rick Astley — Never Gonna Give You Up", channel: "Rick Astley", desc: "The internet's most legendary music video.", category: "Music", thumb: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" },
-    { id: "JGwWNGJdvx8", title: "Ed Sheeran — Shape of You", channel: "Ed Sheeran", desc: "Official music video for the global hit.", category: "Music", thumb: "https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg" },
-    { id: "kJQP7kiw5Fk", title: "Luis Fonsi — Despacito ft. Daddy Yankee", channel: "Luis Fonsi", desc: "One of the most viewed videos on YouTube.", category: "Music", thumb: "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg" },
-    { id: "RgKAFK5djSk", title: "Wiz Khalifa — See You Again ft. Charlie Puth", channel: "Wiz Khalifa", desc: "A tribute to Paul Walker.", category: "Music", thumb: "https://i.ytimg.com/vi/RgKAFK5djSk/hqdefault.jpg" },
+    { id: "dQw4w9WgXcQ", title: "Rick Astley â€” Never Gonna Give You Up", channel: "Rick Astley", desc: "The internet's most legendary music video.", category: "Music", thumb: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" },
+    { id: "JGwWNGJdvx8", title: "Ed Sheeran â€” Shape of You", channel: "Ed Sheeran", desc: "Official music video for the global hit.", category: "Music", thumb: "https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg" },
+    { id: "kJQP7kiw5Fk", title: "Luis Fonsi â€” Despacito ft. Daddy Yankee", channel: "Luis Fonsi", desc: "One of the most viewed videos on YouTube.", category: "Music", thumb: "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg" },
+    { id: "RgKAFK5djSk", title: "Wiz Khalifa â€” See You Again ft. Charlie Puth", channel: "Wiz Khalifa", desc: "A tribute to Paul Walker.", category: "Music", thumb: "https://i.ytimg.com/vi/RgKAFK5djSk/hqdefault.jpg" },
   ],
   music: [
-    { id: "OPf0YbXqDm0", title: "Mark Ronson — Uptown Funk ft. Bruno Mars", channel: "Mark Ronson", desc: "Legendary funk groove.", category: "Music", thumb: "https://i.ytimg.com/vi/OPf0YbXqDm0/hqdefault.jpg" },
-    { id: "CevxZvSJLk8", title: "Katy Perry — Roar", channel: "Katy Perry", desc: "Empowering pop anthem.", category: "Music", thumb: "https://i.ytimg.com/vi/CevxZvSJLk8/hqdefault.jpg" },
-    { id: "hT_nvWreIhg", title: "OneRepublic — Counting Stars", channel: "OneRepublic", desc: "Anthemic pop-rock classic.", category: "Music", thumb: "https://i.ytimg.com/vi/hT_nvWreIhg/hqdefault.jpg" },
-    { id: "fRh_vgS2dFE", title: "Justin Bieber — Sorry", channel: "Justin Bieber", desc: "Dance-driven official video.", category: "Music", thumb: "https://i.ytimg.com/vi/fRh_vgS2dFE/hqdefault.jpg" },
+    { id: "OPf0YbXqDm0", title: "Mark Ronson â€” Uptown Funk ft. Bruno Mars", channel: "Mark Ronson", desc: "Legendary funk groove.", category: "Music", thumb: "https://i.ytimg.com/vi/OPf0YbXqDm0/hqdefault.jpg" },
+    { id: "CevxZvSJLk8", title: "Katy Perry â€” Roar", channel: "Katy Perry", desc: "Empowering pop anthem.", category: "Music", thumb: "https://i.ytimg.com/vi/CevxZvSJLk8/hqdefault.jpg" },
+    { id: "hT_nvWreIhg", title: "OneRepublic â€” Counting Stars", channel: "OneRepublic", desc: "Anthemic pop-rock classic.", category: "Music", thumb: "https://i.ytimg.com/vi/hT_nvWreIhg/hqdefault.jpg" },
+    { id: "fRh_vgS2dFE", title: "Justin Bieber â€” Sorry", channel: "Justin Bieber", desc: "Dance-driven official video.", category: "Music", thumb: "https://i.ytimg.com/vi/fRh_vgS2dFE/hqdefault.jpg" },
   ],
   official: [
-    { id: "papuvlVeZg8", title: "Rema — Calm Down", channel: "Rema", desc: "Afrobeats global smash.", category: "Afrobeats", thumb: "https://i.ytimg.com/vi/papuvlVeZg8/hqdefault.jpg" },
-    { id: "2Vv-BfVoq4g", title: "Ed Sheeran — Perfect", channel: "Ed Sheeran", desc: "Official music video.", category: "Pop", thumb: "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg" },
-    { id: "rtOvBOTyX00", title: "Christina Perri — A Thousand Years", channel: "Christina Perri", desc: "From The Twilight Saga.", category: "Pop", thumb: "https://i.ytimg.com/vi/rtOvBOTyX00/hqdefault.jpg" },
-    { id: "YQHsXMglC9A", title: "Adele — Hello", channel: "Adele", desc: "Iconic comeback single.", category: "Pop", thumb: "https://i.ytimg.com/vi/YQHsXMglC9A/hqdefault.jpg" },
+    { id: "papuvlVeZg8", title: "Rema â€” Calm Down", channel: "Rema", desc: "Afrobeats global smash.", category: "Afrobeats", thumb: "https://i.ytimg.com/vi/papuvlVeZg8/hqdefault.jpg" },
+    { id: "2Vv-BfVoq4g", title: "Ed Sheeran â€” Perfect", channel: "Ed Sheeran", desc: "Official music video.", category: "Pop", thumb: "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg" },
+    { id: "rtOvBOTyX00", title: "Christina Perri â€” A Thousand Years", channel: "Christina Perri", desc: "From The Twilight Saga.", category: "Pop", thumb: "https://i.ytimg.com/vi/rtOvBOTyX00/hqdefault.jpg" },
+    { id: "YQHsXMglC9A", title: "Adele â€” Hello", channel: "Adele", desc: "Iconic comeback single.", category: "Pop", thumb: "https://i.ytimg.com/vi/YQHsXMglC9A/hqdefault.jpg" },
   ],
   trailers: [
-    { id: "TcMBFSGVi1c", title: "Avengers: Endgame — Official Trailer", channel: "Marvel", desc: "The epic conclusion.", category: "Trailer", thumb: "https://i.ytimg.com/vi/TcMBFSGVi1c/hqdefault.jpg" },
-    { id: "zSWdZVtXT7E", title: "Interstellar — Official Trailer", channel: "Warner Bros.", desc: "Space epic from Nolan.", category: "Trailer", thumb: "https://i.ytimg.com/vi/zSWdZVtXT7E/hqdefault.jpg" },
-    { id: "8g18jFHCLXk", title: "Dune — Official Trailer", channel: "Warner Bros.", desc: "Sci-fi desert saga.", category: "Trailer", thumb: "https://i.ytimg.com/vi/8g18jFHCLXk/hqdefault.jpg" },
-    { id: "K0eDlFX9GMc", title: "Oppenheimer — Official Trailer", channel: "Universal Pictures", desc: "Nolan's historical epic.", category: "Trailer", thumb: "https://i.ytimg.com/vi/K0eDlFX9GMc/hqdefault.jpg" },
+    { id: "TcMBFSGVi1c", title: "Avengers: Endgame â€” Official Trailer", channel: "Marvel", desc: "The epic conclusion.", category: "Trailer", thumb: "https://i.ytimg.com/vi/TcMBFSGVi1c/hqdefault.jpg" },
+    { id: "zSWdZVtXT7E", title: "Interstellar â€” Official Trailer", channel: "Warner Bros.", desc: "Space epic from Nolan.", category: "Trailer", thumb: "https://i.ytimg.com/vi/zSWdZVtXT7E/hqdefault.jpg" },
+    { id: "8g18jFHCLXk", title: "Dune â€” Official Trailer", channel: "Warner Bros.", desc: "Sci-fi desert saga.", category: "Trailer", thumb: "https://i.ytimg.com/vi/8g18jFHCLXk/hqdefault.jpg" },
+    { id: "K0eDlFX9GMc", title: "Oppenheimer â€” Official Trailer", channel: "Universal Pictures", desc: "Nolan's historical epic.", category: "Trailer", thumb: "https://i.ytimg.com/vi/K0eDlFX9GMc/hqdefault.jpg" },
   ],
 };
 
@@ -62,14 +62,14 @@ const CURATED_COLLECTIONS = {
    3. FALLBACK SAMPLE MOVIES (used if TMDB fails / key missing)
    ============================================================ */
 const SAMPLE_MOVIES = [
-  { id: "s1", title: "Inception", year: "2010", rating: 8.8, genres: "Sci-Fi · Thriller", overview: "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea.", poster: null, backdrop: null },
-  { id: "s2", title: "Interstellar", year: "2014", rating: 8.7, genres: "Sci-Fi · Drama", overview: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.", poster: null, backdrop: null },
-  { id: "s3", title: "The Dark Knight", year: "2008", rating: 9.0, genres: "Action · Crime", overview: "Batman faces the Joker, a criminal mastermind who plunges Gotham into chaos.", poster: null, backdrop: null },
-  { id: "s4", title: "Parasite", year: "2019", rating: 8.5, genres: "Thriller · Drama", overview: "Greed and class discrimination threaten the newly formed symbiotic relationship between two families.", poster: null, backdrop: null },
-  { id: "s5", title: "Dune: Part Two", year: "2024", rating: 8.5, genres: "Sci-Fi · Adventure", overview: "Paul Atreides unites with the Fremen to wage war against the House Harkonnen.", poster: null, backdrop: null },
-  { id: "s6", title: "Everything Everywhere All at Once", year: "2022", rating: 7.8, genres: "Action · Comedy", overview: "An aging Chinese immigrant is swept up in an insane adventure across the multiverse.", poster: null, backdrop: null },
-  { id: "s7", title: "Oppenheimer", year: "2023", rating: 8.3, genres: "Drama · History", overview: "The story of J. Robert Oppenheimer and the creation of the atomic bomb.", poster: null, backdrop: null },
-  { id: "s8", title: "Joker", year: "2019", rating: 8.4, genres: "Drama · Crime", overview: "A mentally troubled comedian embarks on a downward spiral of crime and chaos.", poster: null, backdrop: null },
+  { id: "s1", title: "Inception", year: "2010", rating: 8.8, genres: "Sci-Fi Â· Thriller", overview: "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea.", poster: null, backdrop: null },
+  { id: "s2", title: "Interstellar", year: "2014", rating: 8.7, genres: "Sci-Fi Â· Drama", overview: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.", poster: null, backdrop: null },
+  { id: "s3", title: "The Dark Knight", year: "2008", rating: 9.0, genres: "Action Â· Crime", overview: "Batman faces the Joker, a criminal mastermind who plunges Gotham into chaos.", poster: null, backdrop: null },
+  { id: "s4", title: "Parasite", year: "2019", rating: 8.5, genres: "Thriller Â· Drama", overview: "Greed and class discrimination threaten the newly formed symbiotic relationship between two families.", poster: null, backdrop: null },
+  { id: "s5", title: "Dune: Part Two", year: "2024", rating: 8.5, genres: "Sci-Fi Â· Adventure", overview: "Paul Atreides unites with the Fremen to wage war against the House Harkonnen.", poster: null, backdrop: null },
+  { id: "s6", title: "Everything Everywhere All at Once", year: "2022", rating: 7.8, genres: "Action Â· Comedy", overview: "An aging Chinese immigrant is swept up in an insane adventure across the multiverse.", poster: null, backdrop: null },
+  { id: "s7", title: "Oppenheimer", year: "2023", rating: 8.3, genres: "Drama Â· History", overview: "The story of J. Robert Oppenheimer and the creation of the atomic bomb.", poster: null, backdrop: null },
+  { id: "s8", title: "Joker", year: "2019", rating: 8.4, genres: "Drama Â· Crime", overview: "A mentally troubled comedian embarks on a downward spiral of crime and chaos.", poster: null, backdrop: null },
 ];
 
 /* Genres used by the "Browse by Genre" section */
@@ -179,7 +179,7 @@ function youtubeSearchUrl(q) { return `https://www.youtube.com/results?search_qu
 function youtubeThumb(id) { return `https://i.ytimg.com/vi/${id}/hqdefault.jpg`; }
 
 /* ============================================================
-   7. HERO SEARCH — YOUTUBE
+   7. HERO SEARCH â€” YOUTUBE
    ============================================================ */
 function initYouTubeSearch() {
   const form = $("#ytSearchForm");
@@ -281,7 +281,7 @@ async function runYouTubeSearch(query, pageToken, isPrev = false) {
 
   // Loading state
   resultsEl.innerHTML = renderSkeletons(8, true);
-  statusEl.textContent = `Searching YouTube for "${query}"…`;
+  statusEl.textContent = `Searching YouTube for "${query}"â€¦`;
   metaEl.textContent = `Search: "${query}"`;
   clearBtn.classList.remove("d-none");
 
@@ -616,7 +616,7 @@ async function loadMoviesByTab(tab) {
   state.movieQuery = "";
 
   grid.innerHTML = renderSkeletons(12);
-  statusEl.textContent = "Loading movies…";
+  statusEl.textContent = "Loading moviesâ€¦";
 
   try {
     let data;
@@ -643,7 +643,7 @@ async function searchMovies(query) {
   const note = $("#movieSourceNote");
   state.movieQuery = query;
   grid.innerHTML = renderSkeletons(12);
-  statusEl.textContent = `Searching movies for "${query}"…`;
+  statusEl.textContent = `Searching movies for "${query}"â€¦`;
   try {
     const data = await tmdbFetch("/search/movie", { query, page: "1", include_adult: "false" });
     const movies = (data.results || []).map(mapTmdbMovie).filter(m => m.poster);
@@ -692,7 +692,7 @@ async function openMovieModal(id) {
   const body = $("#movieModalBody");
   const titleEl = $("#movieModalTitle");
 
-  body.innerHTML = `<p style="color:var(--mvx-text-2)">Loading details…</p>`;
+  body.innerHTML = `<p style="color:var(--mvx-text-2)">Loading detailsâ€¦</p>`;
   titleEl.textContent = "Movie Details";
   bootstrap.Modal.getOrCreateInstance(modalEl).show();
 
@@ -706,7 +706,7 @@ async function openMovieModal(id) {
   try {
     const data = await tmdbFetch(`/movie/${id}`, {});
     const mapped = mapTmdbMovie(data);
-    mapped.genres = (data.genres || []).map(g => g.name).join(" · ");
+    mapped.genres = (data.genres || []).map(g => g.name).join(" Â· ");
     mapped.overview = data.overview || "";
     mapped.tagline = data.tagline || "";
     mapped.runtime = data.runtime || 0;
@@ -790,7 +790,7 @@ async function loadGenreMovies(genreId, genreName) {
   const statusEl = $("#movieStatus");
   const note = $("#movieSourceNote");
   grid.innerHTML = renderSkeletons(12);
-  statusEl.textContent = `Loading ${genreName} movies…`;
+  statusEl.textContent = `Loading ${genreName} moviesâ€¦`;
   document.querySelector("#movies")?.scrollIntoView({ behavior: "smooth" });
   try {
     const data = await tmdbFetch("/discover/movie", {
